@@ -38,7 +38,7 @@ Así se ve el componente cuando los datos no son válidos en el formulario:
 
 ### 🔗 Enlace al proyecto
 
-- 🌐 [Ver sitio en línea](https://your-live-site-url.com)
+- 🌐 [Ver sitio en línea](https://camilo-atb.github.io/intro-component-signup-form/)
 
 ---
 
@@ -60,7 +60,6 @@ Soy estudiante de ADSO y del programa ONE de Alura Latam y Oracle.
 Si quieres conocer más sobre mi trabajo y mi proceso de aprendizaje, te invito a visitar mis perfiles:
 
 - [LinkedIn](http://www.linkedin.com/in/camilo-téllez)
-- [Frontend Mentor](https://www.frontendmentor.io/profile/camilo-atb)
 - [YouTube](https://www.youtube.com/@camilotellez887)
 
 ¡Gracias por visitar este proyecto y por seguir mi proceso de aprendizaje! 🚀✨
