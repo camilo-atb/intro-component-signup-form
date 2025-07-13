@@ -1,0 +1,198 @@
+:root{
+/* COLORES PRIMARIOS*/
+--color-red: hsl(0, 100%, 74%); 
+--color-green: hsl(154, 59%, 51%);
+/* COLORES "ACENTO" */
+--color-blue: hsl(248, 32%, 49%);
+/* COLORES NEUTROS */
+--color-dark-blue: hsl(249, 10%, 26%); 
+--color-grayish-blue: hsl(246, 25%, 77%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-red);
+}
+
+.main{
+    width: 100%;
+    background-image: url("/images/bg-intro-mobile.png");
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    gap: 40px;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+}
+
+.principal{
+    color: white;
+}
+
+.principal__title{
+    font-weight: 700;
+    text-align: center;
+}
+
+.principal__paragraph{
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 0.87rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.secundaria__precio{
+    color: white;
+    font-size: 0.87rem;
+    border-radius: 10px;
+    padding: 15px 60px;
+    text-align: center;
+    background-color: var(--color-blue);
+    margin-bottom: 15px;
+    box-shadow: 0 5px 6px 0px rgba(0, 0, 0, 0.277);
+}
+
+.secundaria__formulario{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 6px 0px rgba(0, 0, 0, 0.277);
+}
+
+.formulario__input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 3px;
+    border: 0;
+    outline: 0.1px solid var(--color-grayish-blue);
+    font-weight: 500;
+}
+
+.formulario__input:focus{
+    outline: 1.2px solid var(--color-red);
+    transition: 0.5s ease;
+    box-shadow: 0 4px 4px 1px hsla(0, 100%, 74%, 0.382);
+}
+
+.formulario__input:focus::placeholder{
+    color: var(--color-red);
+    /* color: transparent; */
+    transition: color 0.5s ease;
+    /* transition: 0.7s; */
+}
+
+/* ============================================== */
+
+.formulario__input--error{
+    outline: 1.2px solid var(--color-red);
+    background-image: url("/images/icon-error.svg"); 
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 18px 18px;
+}
+
+.formulario__input--error::placeholder{
+    color: var(--color-red);
+}
+
+.formulario__error{
+    margin-top: 5px;
+    font-size: 0.66rem;
+    text-align: end;
+    font-style: italic;
+    color: var(--color-red);
+    display: none;
+}
+
+.formulario__error--active{
+    display: block;
+}
+
+/* ============================================== */
+
+.formulario__boton{
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-color: var(--color-green);
+    color: white;
+    box-shadow: 0 5px 6px 0px hsla(154, 69%, 35%, 0.349);
+    cursor: pointer;
+}
+
+.formulario__terminos{
+    font-size: 0.66rem;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.formulario__terminos-span{
+    color: var(--color-red);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.formulario__atribucion-texto a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* PANTALLAS GRANDES */
+
+@media (min-width: 1200px) {
+    .main{
+    background-image: url("/images/bg-intro-desktop.png");
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    padding: 0 160px;
+    min-height: 100vh;
+    }
+
+    .container{
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    .principal__title{
+        font-size: 2.9rem;
+        line-height: 1.1;
+        text-align: start;
+    }
+
+    .principal__paragraph{
+        text-align: start;
+        font-size: 0.9rem;
+    }
+
+    /* FORMULARIO */
+    .secundaria__formulario{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 8px 6px 0px rgba(0, 0, 0, 0.277);
+    }
+}

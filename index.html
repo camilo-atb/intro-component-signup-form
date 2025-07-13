@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css"></link>
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main">
+    <section class="container principal">
+      <h1 class="principal__title">Learn to code by watching others</h1>
+      <p class="principal__paragraph">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+      </p>
+    </section>
+
+    <section class="container secundaria">
+      <div class="secundaria__precio">
+        <p class="secundaria__precio-texto">
+          <b>Try it free 7 days</b> then $20/mo. thereafter
+        </p>
+      </div>
+
+      <form class="secundaria__formulario" novalidate>
+        <div class="formulario__grupo">
+          <input type="text" placeholder="First Name" class="formulario__input" id="input__nombre">
+          <p class="formulario__error" id="error__paragraph--nombre">First Name cannot be empty</p>
+        </div>
+        <div class="formulario__grupo">
+          <input type="text" placeholder="Last Name" class="formulario__input" id="input__apellido">
+          <p class="formulario__error" id="error__paragraph--apellido">Last Name cannot be empty</p>
+        </div>
+        <div class="formulario__grupo">
+          <input type="email" placeholder="Email Address" class="formulario__input" id="input__email">
+          <p class="formulario__error" id="error__paragraph--email">Looks like this is not an email</p>
+        </div>
+        <div class="formulario__grupo">
+          <input type="password" placeholder="Password" class="formulario__input" id="input__contraseña">
+          <p class="formulario__error" id="error__paragraph--contraseña">Password cannot be empty</p>
+        </div>
+        <button type="submit" class="formulario__boton" id="boton_id">Claim your free trial</button>
+
+        <p class="formulario__terminos formulario__atribucion-texto">
+          By clicking the button, you are agreeing to our <span class="formulario__terminos-span">Terms and Services</span>
+          <br> 
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="http://www.linkedin.com/in/camilo-téllez">Camilo Andrés Téllez Benítez</a>.
+        </p>
+      </form>
+    </section>
+  </main>
+  <script src="script/script.js"></script>
+</body>
+</html>
