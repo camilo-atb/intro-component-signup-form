@@ -23,7 +23,7 @@ body{
 
 .main{
     width: 100%;
-    background-image: url("/images/bg-intro-mobile.png");
+    background-image: url("../images/bg-intro-mobile.png");
     background-size: contain;
     background-position: center;
     display: flex;
@@ -161,12 +161,12 @@ body{
 
 @media (min-width: 1200px) {
     .main{
-    background-image: url("/images/bg-intro-desktop.png");
-    flex-direction: row;
-    justify-content: center;
-    gap: 60px;
-    padding: 0 160px;
-    min-height: 100vh;
+        background-image: url("../images/bg-intro-desktop.png");
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+        padding: 0 160px;
+        min-height: 100vh;
     }
 
     .container{
